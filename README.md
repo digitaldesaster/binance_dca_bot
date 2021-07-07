@@ -10,6 +10,11 @@ The intention of this software is to show how one could program a DCA bot.
 Please use the open orders / order history function auf binance to check whats going on and to cancel any deals.. 
 #dca_bot_manager.py 
 
+Install the needed packages like mongoengine, asyncio and python-binance
+PUT your API KEY/SECRET into the config.py file!
+
+
+
 1.) The function syncAllSymbols() fetches all supported pairs to the internal MongoDB! Only BUSD/USDT pairs are supported. Dont try to use any other pairs at the moment! This function will be called everytime you start the second script (deal_manager.py) 
 
 2.) status = createBot(name='AAVE #testing',pair='AAVEBUSD',bot_template="TestingBot", activate_bot=True)
